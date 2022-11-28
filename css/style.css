@@ -2,6 +2,10 @@
     visibility: hidden;
 }
 
+nav{
+    justify-items: center;
+}
+
 nav li{
     background-color: beige;
     border: 2px solid black;
@@ -12,6 +16,8 @@ nav li{
     font-family: Arial, Helvetica, sans-serif;
     justify-items: center; /*how do u center all of them*/
 }
+
+/* have to style active nav li element*/
 
 h1{
     text-align: center;
@@ -30,7 +36,7 @@ body{
 
 .images{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
     margin: auto;
     align-items: center;
     justify-content: center;
@@ -40,5 +46,55 @@ body{
 
 .images img{
     width: 80%;
-    border: black solid 2px;
+    border: white solid 2px;
+}
+
+footer{
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+}
+
+@media screen and (min-width: 700px){
+    .paragraph{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .images{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        row-gap: 10px;
+    }
+    
+    .images img{
+        width: 80%;
+        border: white solid 2px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .paragraph{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .images{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        row-gap: 10px;
+    }
+    
+    .images img{
+        width: 80%;
+        border: white solid 2px;
+    }
 }
