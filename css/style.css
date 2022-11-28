@@ -1,0 +1,44 @@
+.skip{
+    visibility: hidden;
+}
+
+nav li{
+    background-color: beige;
+    border: 2px solid black;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 10px;
+    width:18%;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-items: center; /*how do u center all of them*/
+}
+
+h1{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: beige;
+}
+
+body{
+    background-color: lightpink;
+}
+
+.paragraph{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 10px;
+}
+
+.images img{
+    width: 80%;
+    border: black solid 2px;
+}
