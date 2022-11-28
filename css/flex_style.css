@@ -3,7 +3,7 @@
 }
 
 nav li{
-    background-color: beige;
+    background-color: lightpink;
     border: 2px solid black;
     border-radius: 25px;
     display: inline-block;
@@ -13,14 +13,18 @@ nav li{
     justify-items: center; /*how do u center all of them*/
 }
 
+.active{
+    border: 2px dashed black;
+}
+
 h1{
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color: beige;
+    color: black;
 }
 
 body{
-    background-color: lightpink;
+    background-color: beige;
 }
 
 .container p{
@@ -33,7 +37,7 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    align-content: space-between;
+    align-content: space-around;
 }
 
 .images img{
@@ -45,10 +49,7 @@ body{
 .inspo h2, p{
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: left;
-}
-
-.inspo h2{
-    color: beige;
+    color: black;
 }
 
 .inspo{
@@ -66,10 +67,35 @@ body{
 }
 
 @media screen and (min-width: 700px){
-    .images p{
-        font-family: Arial, Helvetica, sans-serif;
+    .images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
     }
     
+    .images img{
+        width: auto;
+        height: 300px;
+        border: white 2px solid;
+    }
+    
+    .inspo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: space-between;
+    }
+    
+    .inspo img{
+        width: 300px;
+        height: auto;
+        border: white 2px solid;
+    }
+}
+
+@media screen and (min-width: 1200px){
     .images {
         display: flex;
         flex-direction: row;
@@ -83,17 +109,12 @@ body{
         height: 300px;
         border: white 2px solid;
     }
-    .inspo h2, p{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: beige;
-        text-align: left;
-    }
     
     .inspo{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         align-content: space-between;
     }
     

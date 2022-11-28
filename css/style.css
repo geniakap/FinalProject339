@@ -2,12 +2,16 @@
     visibility: hidden;
 }
 
+/* header{
+    background-color: blue;
+} */
+
 nav{
     justify-items: center;
 }
 
 nav li{
-    background-color: beige;
+    background-color: lightpink;
     border: 2px solid black;
     border-radius: 25px;
     display: inline-block;
@@ -17,16 +21,18 @@ nav li{
     justify-items: center; /*how do u center all of them*/
 }
 
-/* have to style active nav li element*/
+.active{
+    border: 2px dashed black;
+}
 
 h1{
     text-align: center;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    color: beige;
+    color: black;
 }
 
 body{
-    background-color: lightpink;
+    background-color: beige;
 }
 
 .paragraph{
