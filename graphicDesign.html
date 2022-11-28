@@ -27,7 +27,14 @@
 	<main class = "container">
 		<p>Graphic design has been one of my focuses her in my time at Michigan. I have taken courses in color, typography, and worked at design editor at SHEI Magazine.<br></p>
         <div class = "images">
-                <img src="images/graphicDesignPhoto1.jpg" alt="graphicDesignPhoto1" width="100%"/>
+			<!-- <a href = "images/graphicDesignPhoto1.jpg" 
+        	target="blank"
+			data-lightbox="design" 
+        	data-title="design1" 
+        	data-alt="design ex 1">
+            	<img src="images/graphicDesignPhoto1.jpg" width = "200" alt="design ex1">
+        	</a> -->
+				<img src="images/graphicDesignPhoto1.jpg" alt="graphicDesignPhoto1" width="100%"/>
                 <img src="images/graphicDesignPhoto2.jpg" alt="graphicDesignPhoto2" width="100%"/>
                 <img src="images/graphicDesignPhoto3.jpg" alt="graphicDesignPhoto3" width="100%"/>
                 <img src="images/graphicDesignPhoto4.jpg" alt="graphicDesignPhoto4" width="100%"/>
@@ -42,8 +49,14 @@
 				<img src="type_imgs/merry xmas.jpg" alt="merry christmas card" width="100%"/>
 				<img src="type_imgs/sorry for your loss.jpg" alt="sorry for your loss card" width="100%"/>
         </div>
-	<!-- <script src="js/lightbox.js"></script> how do you do this-->
 	</main>
+	<script src="dist/js/lightbox-plus-jquery.js"></script>
+	<script>
+		lightbox.option({
+		  'resizeDuration': 5,
+		  'wrapAround': true
+		})
+	</script>
 
 	<footer>Emma Peterson & Geni Kapelonis -- SI 339 -- Portfolio 2022</footer>
 

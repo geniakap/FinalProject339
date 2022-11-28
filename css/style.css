@@ -21,6 +21,14 @@ nav li{
     justify-items: center; /*how do u center all of them*/
 }
 
+a, a:visited{
+    color: black;
+}
+
+a:hover{
+    color: blue;
+}
+
 .active{
     border: 2px dashed black;
 }
