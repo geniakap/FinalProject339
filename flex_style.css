@@ -1,0 +1,136 @@
+.skip{
+    visibility: hidden;
+}
+
+nav li{
+    background-color: lightpink;
+    border: 2px solid black;
+    border-radius: 25px;
+    display: inline-block;
+    padding: 10px;
+    width:18%;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-items: center; /*how do u center all of them*/
+}
+
+
+a, a:visited{
+    color: black;
+}
+
+a:hover{
+    color: blue;
+}
+
+.active{
+    border: 2px dashed black;
+    background-color: rgb(255, 178, 46);
+}
+
+h1{
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+body{
+    background-color: beige;
+}
+
+.container p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.images img{
+    width: 300px;
+    height: auto;
+    border: white 2px solid;
+}
+
+h2, p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: black;
+}
+
+.inspo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+.inspo img{
+    width: 300px;
+    height: auto;
+    border: white 2px solid;
+}
+
+@media screen and (min-width: 800px){
+    .images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    
+    .images img{
+        width: 400px;
+        height: auto;
+        border: white 2px solid;
+    }
+    
+    .inspo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: space-between;
+    }
+    
+    .inspo img{
+        width: auto;
+        height: 300px;
+        border: white 2px solid;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .images {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: space-between;
+    }
+    
+    /* .images img{
+        width: auto;
+        height: 300px;
+        border: white 2px solid;
+    }
+     */
+    .inspo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-content: space-between;
+    }
+    
+    .inspo img{
+        width: 300px;
+        height: auto;
+        border: white 2px solid;
+    }
+}
