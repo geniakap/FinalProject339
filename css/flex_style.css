@@ -24,6 +24,7 @@ a:hover{
 
 .active{
     border: 2px dashed black;
+    background-color: rgb(255, 178, 46)
 }
 
 h1{
